@@ -1,0 +1,4 @@
+@EndUserText.label: 'DMS Service Definition 22AD124'
+define service ZCIT_DM_S22AD124 {
+  expose ZCIT_DM_C22AD124 as Document;
+}

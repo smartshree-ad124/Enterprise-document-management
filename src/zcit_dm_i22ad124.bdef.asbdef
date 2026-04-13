@@ -1,0 +1,13 @@
+unmanaged implementation in class ZBP_DM_I22AD124 unique;
+strict ( 2 );
+
+define behavior for ZCIT_DM_I22AD124 alias Document
+lock master
+authorization master ( instance )
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly ) DocumentID;
+}

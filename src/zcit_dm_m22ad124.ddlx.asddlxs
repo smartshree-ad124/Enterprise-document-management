@@ -1,0 +1,57 @@
+@Metadata.layer: #CUSTOMER
+
+@UI.headerInfo: {
+  typeName: 'Document',
+  typeNamePlural: 'Documents',
+  title: { type: #STANDARD, label: 'Document ID', value: 'DocumentID' },
+  description: { label: 'Title', value: 'Title' }
+}
+
+annotate view ZCIT_DM_C22AD124 with {
+
+  @UI.facet: [
+    {
+      id: 'GeneralInfo',
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'General Information',
+      position: 10
+    }
+  ]
+
+  @UI.identification: [{ position: 10 }]
+  @UI.selectionField: [{ position: 10 }]
+  @UI.lineItem: [{ position: 10 }]
+  @EndUserText.label: 'Document ID' -- This label appears above the input box [cite: 303]
+  DocumentID;
+
+  @UI.identification: [{ position: 20 }]
+  @UI.selectionField: [{ position: 20 }]
+  @UI.lineItem: [{ position: 20 }]
+  @EndUserText.label: 'Document Title'
+  Title;
+
+  @UI.identification: [{ position: 30 }]
+  @UI.lineItem: [{ position: 30 }]
+  @EndUserText.label: 'File Type'
+  DocType;
+
+  @UI.identification: [{ position: 40 }]
+  @UI.lineItem: [{ position: 40 }]
+  @EndUserText.label: 'Current Status'
+  Status;
+
+  @UI.identification: [{ position: 50 }]
+  @UI.lineItem: [{ position: 50 }]
+  @EndUserText.label: 'Priority Level'
+  Priority;
+
+  @UI.identification: [{ position: 60 }]
+  @UI.lineItem: [{ position: 60 }]
+  @EndUserText.label: 'Maintenance Cost'
+  StorageCost;
+
+  @UI.identification: [{ position: 70 }]
+  @UI.lineItem: [{ position: 70 }]
+  @EndUserText.label: 'Currency'
+  Currency;
+}

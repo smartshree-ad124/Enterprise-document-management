@@ -1,0 +1,9 @@
+projection;
+strict ( 2 ); // Advanced standard
+
+define behavior for ZCIT_DM_C22AD124 alias Document
+{
+  use create;
+  use update;
+  use delete;
+}
